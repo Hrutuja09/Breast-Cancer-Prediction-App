@@ -11,7 +11,7 @@ import pickle
 warnings.filterwarnings('ignore')
 
 ### Import Datset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data_breast-cancer-wiscons.csv")
 # we change the class values (at the column number 2) from B to 0 and from M to 1
 df.iloc[:,1].replace('B', 0,inplace=True)
 df.iloc[:,1].replace('M', 1,inplace=True)
